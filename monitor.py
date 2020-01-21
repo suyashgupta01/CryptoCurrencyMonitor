@@ -19,7 +19,7 @@ update_time = int(input("Update " + cryptocurrency + "\'s price in every ? secon
 total_time = int(input("Monitor " + cryptocurrency + "\'s price for ? seconds: "))
 headerss = {'User-Agent': 'Guptaji\'s_request'}
 
-iterations = int(update_time/ total_time)
+iterations = int( total_time/ update_time)
 i = 0
 while i <= iterations:
     r = rq.get(url, headers = headerss)
